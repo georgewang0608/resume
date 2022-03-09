@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{:#2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeProject}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubsub}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{#5}{#1}}&#2 \\
+      %\textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSub}[4]{
+  
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \text{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large George Wang}} & Email : \href{}{yunqiw68@cs.washington.edu}\\
+  \href{}{5000 25th Ave. NE Seattle, WA, 98105} & Mobile : +1-206-209-9996 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, USA}
+      {B.S. Computer Science; GPA: 3.8 }{Sept 2019 - Exp. Jun 2023}
+       \vspace{-2pt}
+       
+     \textbf{Selected Coursework:} {\small Data Structure and Algorithms, Systems programming, Database Systems, Hardware Software interface, Web Programming, Foundations of computing} 
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Associated Students of the University of Washington}{Seattle, USA}
+      {Student Senator}{July 2020 - June 2021}
+        \resumeItemListStart
+        \resumeProject{}
+          {Participated in University legislation council and vote for resolutions}
+        \resumeProject{}
+          {Participated the hall caucus meeting and proposed new resolutions}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------Achievement-----------------
+\section{Achievement}
+  \resumeSubHeadingListStart
+   \item{\textbf{Competitions}}{}
+    \vspace{-5pt}
+      \resumeItemListStart
+       \resumeProject{}
+         {University of Waterloo Euclid Mathematics competition: Silver award}
+       \resumeProject{}
+         {Duke Math Meet: Honorable mention}
+      \resumeItemListEnd
+    \item{\textbf{Honors}}{}
+    \vspace{-5pt}
+      \resumeItemListStart
+       \resumeProject{}
+         {Dean’s list: Fall 2022}
+       \resumeProject{}
+         {Annual Dean’s list: 2020-2021 }
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {\href{https://github.com/georgewang0608/game-manager}{Game Manager}}{}
+      {Python, HTML, Flask}{}
+      \resumeItemListStart
+      \resumeProject{}
+          {Developed a Web app that fetches games update and relevant twitch stream by analysing user's steam account}
+        \resumeProject{}
+          {Implemented SteamStorefront API, Twitch API and Steam API for the website's functionality}
+        \resumeProject{}
+          {Implemented Flask template for more concise coding and reduce redundancy}
+         \resumeProject{}
+          {Designed the visual elements that interacts with user's inputs}
+      \resumeItemListEnd
+      \resumeSubheading
+      {\href{https://github.com/georgewang0608/Image-processing}{Image Processor}}{}
+      {Java}{}
+      \resumeItemListStart
+      \resumeProject{}
+      {Developed a Image processing app that is capable of resizing input picture image files using the Seam-carving image resizing technique}
+        \resumeProject{}
+          {Implemented directed edge-weighted graph, adjacency list as key data structures}
+        \resumeProject{}
+        {Implemented algorithms including Topological sort, Dijkstra's algorithm}
+        \resumeProject{}
+        {Implemented Dynamic Programming as the programming method to optimize the run-time}
+      \resumeItemListEnd
+    %   \resumeSubheading
+    %   {Socket Programming}{}
+    %   {C++, multi-threading}{}
+    %   \resumeItemListStart
+    %     \resumeProject{}
+    %       {both TCP and UDP packets sent/received}
+    %     \resumeProject{}
+    %       {Multithreading and synchronization in the server to process concurrent client requests}
+    %   \resumeItemListEnd
+      \resumeSubheading
+      {\href{https://github.com/georgewang0608/memory-allocator}{Memory Allocator}}{}
+      {C}{}
+      \resumeItemListStart
+      \resumeProject{}
+      {Engineered a dynamic memory allocator that is capable of allocating, reallocating and freeing allocated blocks on the heap}
+        \resumeProject{}
+          {Mananged the inner structure of heap blocks including boundary tags, size tags}
+        \resumeProject{}
+          {Implemented a node structure in heap blocks to link up all the allocated blocks}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{\textbf{Language skills}{: Chinese, English, German}}
+     \vspace{-5pt}
+    \item{\textbf{Programming Languages}{: Python, Java, C/C++, JavaScript, JSON, HTML, CSS, SQL}}
+     \vspace{-5pt}
+    \item{\textbf{Framework and Tools}{: Web (JQuery, Cookie, Canvas, Node.js, Flask), Cloud (AWS, Azure), Database (MySQL, SQL++, SQLite, Apache spark), Misc (Git, Linux)}}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
